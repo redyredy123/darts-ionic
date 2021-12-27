@@ -1,0 +1,6 @@
+<ion-item>
+	<ion-input placeholder="name" [(ngModel)]="name"></ion-input>
+	<ion-button (click)="_create(name)" [disabled]="name.length < 3"
+		>add</ion-button
+	>
+</ion-item>
